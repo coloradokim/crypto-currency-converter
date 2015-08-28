@@ -2,7 +2,7 @@
 <html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>Currency Converter</title>
+    <title>Crypto Currency Converter</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:600italic' rel='stylesheet' type='text/css'>
@@ -13,15 +13,15 @@
       <form>
         <input type="text" ng-model="number">
         <select ng-model="coinName">
-          <option value="BTC">BTC</option>
-          <option value="XDC">XDC</option>
-          <option value="LTC">LTC</option>
+          <option value="Bitcoin">Bitcoin</option>
+          <option value="Dogecoin">Dogecoin</option>
+          <option value="Litecoin">Litecoin</option>
         </select>
     </form>
       <p class="bold">{{coinName}} =</p>
-      <p class="fancy" ng-show="coinName === 'BTC'"> {{bitcoinData.ask * number | currency}}</p><span ng-show="coinName === 'BTC'" class="bold">USD</span>
-      <p class="fancy" ng-show="coinName === 'XDC'"> {{dogecoinData.ask * number| currency}}</p><span ng-show="coinName === 'XDC'" class="bold">USD</span>
-      <p class="fancy" ng-show="coinName === 'LTC'"> {{litecoinData.ask * number | currency}}</p><span ng-show="coinName === 'LTC'" class="bold">USD</span>
+      <p class="fancy" ng-show="coinName === 'Bitcoin'"> {{bitcoinData.ask * number | currency}}</p><span ng-show="coinName === 'BTC'" class="bold">USD</span>
+      <p class="fancy" ng-show="coinName === 'Dogecoin'"> {{dogecoinData.ask * number| currency}}</p><span ng-show="coinName === 'XDC'" class="bold">USD</span>
+      <p class="fancy" ng-show="coinName === 'Litecoin'"> {{litecoinData.ask * number | currency}}</p><span ng-show="coinName === 'LTC'" class="bold">USD</span>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
